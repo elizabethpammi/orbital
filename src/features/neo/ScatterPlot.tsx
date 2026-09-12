@@ -56,7 +56,7 @@ export function ScatterPlot({ approaches }: { approaches: readonly NeoApproach[]
       [HEIGHT - MARGIN.bottom, MARGIN.top],
     );
     const points = approaches.map((a) => ({
-      id: a.id,
+      key: `${a.id}-${a.epochMs}`,
       cx: xScale.toPx(a.missKm),
       cy: yScale.toPx(representativeDiameterM(a)),
       hazardous: a.hazardous,
@@ -143,7 +143,7 @@ export function ScatterPlot({ approaches }: { approaches: readonly NeoApproach[]
         </text>
         {scene.points.map((p) => (
           <circle
-            key={p.id}
+            key={p.key}
             className={p.hazardous ? 'dot dot--hazard' : 'dot'}
             cx={p.cx}
             cy={p.cy}

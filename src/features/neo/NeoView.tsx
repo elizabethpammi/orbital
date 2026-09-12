@@ -50,8 +50,9 @@ function SortHeader({
 function NeoTable({ rows }: { rows: readonly NeoApproach[] }) {
   return (
     <tbody>
+      {/* An object can approach more than once in the window, so id alone is not a unique key. */}
       {rows.map((row) => (
-        <tr key={row.id}>
+        <tr key={`${row.id}-${row.epochMs}`}>
           <td>
             {row.name}{' '}
             {row.hazardous && <span className="hazard-badge">PHA</span>}
