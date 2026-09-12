@@ -1,0 +1,60 @@
+/*
+ * Design tokens — the entire visual vocabulary of the app.
+ * Components consume tokens only; no raw hex values outside this file.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces — deep blue-blacks, not pure black, so elevation reads. */
+  --bg-0: #060911;
+  --bg-1: #0b101d;
+  --bg-2: #121a2c;
+  --bg-3: #1a2440;
+
+  /* Text */
+  --text-1: #e8ecf4;
+  --text-2: #a3adc2;
+  --text-3: #6b7590;
+
+  /* Accents */
+  --accent: #7dd3fc;      /* ice blue — primary */
+  --accent-deep: #38bdf8;
+  --amber: #fbbf24;       /* hazard / warning */
+  --green: #4ade80;       /* live / ok */
+  --red: #f87171;         /* error */
+
+  /* Lines */
+  --line-1: rgba(163, 173, 194, 0.14);
+  --line-2: rgba(163, 173, 194, 0.28);
+
+  /* Type */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: clamp(1.75rem, 4vw, 2.5rem);
+
+  /* Rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2.5rem;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --focus-ring: 0 0 0 2px var(--bg-0), 0 0 0 4px var(--accent);
+  --duration: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration: 0ms;
+  }
+}
