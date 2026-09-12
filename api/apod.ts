@@ -1,4 +1,4 @@
-import { normalizeApod } from '../shared/normalize';
+import { normalizeApod } from '../shared/normalize.js';
 import {
   cachedUpstream,
   fetchUpstreamJson,
@@ -6,7 +6,7 @@ import {
   ok,
   sendResult,
   withErrorEnvelope,
-} from './_lib';
+} from './_lib.js';
 
 /**
  * GET /api/apod — NASA Astronomy Picture of the Day.

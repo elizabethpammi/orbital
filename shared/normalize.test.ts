@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { isApiResult, isApod, isIssPosition, isNeoFeed } from './guards';
-import { NormalizeError, normalizeApod, normalizeIss, normalizeNeoFeed } from './normalize';
+import { isApiResult, isApod, isIssPosition, isNeoFeed } from './guards.js';
+import { NormalizeError, normalizeApod, normalizeIss, normalizeNeoFeed } from './normalize.js';
 
 const rawApod = {
   date: '2026-09-11',

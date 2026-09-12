@@ -1,4 +1,4 @@
-import { normalizeNeoFeed } from '../shared/normalize';
+import { normalizeNeoFeed } from '../shared/normalize.js';
 import {
   cachedUpstream,
   fetchUpstreamJson,
@@ -7,7 +7,7 @@ import {
   sendResult,
   utcDate,
   withErrorEnvelope,
-} from './_lib';
+} from './_lib.js';
 
 /**
  * GET /api/neo — NeoWs close approaches for the next 7 days (today + 6).

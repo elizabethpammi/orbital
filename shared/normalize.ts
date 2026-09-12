@@ -8,8 +8,8 @@
  * picture-of-the-day.
  */
 
-import { isRecord, isString, toFiniteNumber } from './guards';
-import type { Apod, IssPosition, NeoApproach, NeoFeed } from './types';
+import { isRecord, isString, toFiniteNumber } from './guards.js';
+import type { Apod, IssPosition, NeoApproach, NeoFeed } from './types.js';
 
 export class NormalizeError extends Error {
   override readonly name = 'NormalizeError';

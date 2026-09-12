@@ -1,5 +1,5 @@
-import { normalizeIss } from '../shared/normalize';
-import { fetchUpstreamJson, ok, sendResult, withErrorEnvelope } from './_lib';
+import { normalizeIss } from '../shared/normalize.js';
+import { fetchUpstreamJson, ok, sendResult, withErrorEnvelope } from './_lib.js';
 
 /**
  * GET /api/iss — live ISS position (NORAD 25544) via wheretheiss.at.

@@ -7,7 +7,7 @@
  */
 
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import type { ApiResult } from '../shared/types';
+import type { ApiResult } from '../shared/types.js';
 
 export type Handler = (req: IncomingMessage, res: ServerResponse) => void | Promise<void>;
 
